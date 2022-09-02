@@ -1,16 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
   }
   
   body {
-    font-family: 'Robot', sans-serif;
+    font-family: 'Muli', sans-serif;
+    background-color: beige;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    padding: 10px;
     margin: 0;
+  }
+
+  h2{
+    margin: 10px 0px 20px;
+    text-align: center;
+  }
+  .container{
+    background-color: bisque;
+    box-shadow: 0px 2px  rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    width: 350px;
+    max-width: 100%;
+  }
+
+  .result-container{
+    background-color:rgba(0, 0, 0, 0.5 );
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    height: 50px;
+    width: 100%;
+  }
+  .result-container .btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+  
+  }
+  .result-container #result{
+    word-wrap: break-word;
+    max-width: calc(100% -40px);
+    height: 100%;
+  }
+  .settings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+  .btn{
+     border: none;
+     background-color: beige;
+     color: black;
+     font-size: 16px;
+     padding: 8px 12px;
+     cursor: pointer;
   }
